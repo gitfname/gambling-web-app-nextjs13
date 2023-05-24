@@ -11,12 +11,12 @@ import { BsGlobe2 } from "react-icons/bs"
 
 export default function Layout_1({children}) {
     return (
-        <div className="w-screen h-screen overflow-hidden bg-red-400 grid grid-rows-1 grid-cols-[5rem_calc(100%-5rem)]">
+        <div className="w-screen h-screen overflow-hidden bg-red-400 grid grid-rows-1 grid-cols-[4.5rem_calc(100%-4.5rem)]">
 
             {/* left side */}
             <div
                 className="bg-[#1c1e22] py-2.5 z-20
-                shadow-[4px_0px_12px_-1px_rgba(0,0,0,0.8)] grid grid-cols-1 grid-rows-[max-content_1fr]"
+                shadow-[4px_0px_12px_-1px_rgba(0,0,0,0.5)] grid grid-cols-1 grid-rows-[max-content_1fr]"
             >
 
                 <div className="px-3">
@@ -83,9 +83,6 @@ export default function Layout_1({children}) {
                     </div>
 
                 </div>
-
-
-
 
             </div>
 

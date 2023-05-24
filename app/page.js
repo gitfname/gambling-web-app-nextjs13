@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-2 gap-x-3 bg-gradient-to-b from-transparent to-[#24262b]">
+      <div className="w-full grid grid-cols-2 gap-x-3">
 
         <Card_2
           btnColor="#743be7"
@@ -188,6 +188,100 @@ export default function Home() {
         />
         
       </div>
+
+
+      <div className="w-full p-8 h-[16.5rem] relative bg-[#16181b] overflow-hidden flex items-center">
+
+        <Image
+          width={700}
+          height={700}
+          alt=""
+          src="/images/ball_1.png"
+          className="w-64 h-64 absolute top-1/2 -left-11 -translate-y-1/2"
+        />
+
+        <Image
+          width={350}
+          height={350}
+          alt=""
+          src="/images/ball_2.png"
+          className="w-[17rem] h-[15rem] absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"
+        />
+        
+        <div className="h-1/2 w-1/2 relative z-10 flex items-stretch justify-center">
+          <div className="flex-shrink-0">
+            <Image
+              width={160}
+              height={60}
+              alt=""
+              src="/images/applepay.webp"
+              className="w-24 h-14 object-center object-scale-down"
+            />
+          </div>
+
+          <div className="flex-shrink-0 flex items-end">
+            <Image
+              width={160}
+              height={60}
+              alt=""
+              src="/images/masterpay.webp"
+              className="w-24 h-14 object-center object-scale-down"
+            />
+          </div>
+
+          <div className="flex-shrink-0">
+            <Image
+              width={160}
+              height={60}
+              alt=""
+              src="/images/googlepay.webp"
+              className="w-24 h-14 object-center object-scale-down"
+            />
+          </div>
+
+          <div className="flex-shrink-0 flex items-end">
+            <Image
+              width={160}
+              height={60}
+              alt=""
+              src="/images/visapay.webp"
+              className="w-24 h-14 object-center object-scale-down"
+            />
+          </div>
+
+          <div className="flex-shrink-0">
+            <Image
+              width={160}
+              height={60}
+              alt=""
+              src="/images/samsungpay.webp"
+              className="w-24 h-14 object-center object-scale-down"
+            />
+          </div>
+        </div>
+
+        <div className="absolute left-1/2 top-0 bottom-0 right-3 backdrop-blur-sm bg-transparent/5 flex items-center pl-14">
+          <div>
+            <p
+              className="text-white text-2xl font-medium"
+            >
+              Fast & Easy Way to get started
+            </p>
+            <p
+              className="text-white text-2xl font-normal mt-1"
+            >
+              <span className="text-yellow-400 font-semibold">300%</span> Deposit Bonus
+            </p>
+            <Button
+              text="Deposite"
+              color="#743be7"
+              className="mt-12"
+            />
+          </div>
+        </div>
+
+      </div>
+
     </Layout_1>
   )
 }
