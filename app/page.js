@@ -1,7 +1,11 @@
 
+import BannerSLiderSection from "@/components/BannerSliderSection";
 import Button from "@/components/Button";
 import Card_2 from "@/components/Card_2";
 import IconButton_1 from "@/components/IconButton_1";
+import RecentBigWinsSection from "@/components/RecentBigWinsSection";
+import RecommendedGamesSection from "@/components/RecommendedGamesSection";
+import TopRatedGamesSection from "@/components/TopratedGamesSection";
 import Layout_1 from "@/layouts/Layout_1";
 import Image from "next/image";
 
@@ -171,7 +175,6 @@ export default function Home() {
       <div className="w-full grid grid-cols-2 gap-x-3">
 
         <Card_2
-          btnColor="#743be7"
           text="CASINO"
           btnText="Go to Casino"
           color="from-purple-800 via-purple-800 to-purple-900/20"
@@ -179,7 +182,7 @@ export default function Home() {
           img="/images/casino.webp"
         />
         <Card_2
-          btnColor="#218338"
+          btnColor="green"
           text="SPORTS"
           btnText="Go to Sports"
           color="from-green-600 via-green-600 to-green-800/20"
@@ -189,7 +192,7 @@ export default function Home() {
         
       </div>
 
-
+      {/* banner-1 */}
       <div className="w-full p-8 h-[16.5rem] relative bg-[#16181b] overflow-hidden flex items-center">
 
         <Image
@@ -274,10 +277,85 @@ export default function Home() {
             </p>
             <Button
               text="Deposite"
-              color="#743be7"
               className="mt-12"
             />
           </div>
+        </div>
+
+      </div>
+
+      {/* top tayed games */}
+      <TopRatedGamesSection />
+
+      {/* recent big wins */}
+      <RecentBigWinsSection />
+
+      {/* banners-2 */}
+      <div className="w-full h-96 mt-20">
+        <BannerSLiderSection />
+      </div>
+
+      {/* recommmended games */}
+      <div className="w-full mt-12">
+        <RecommendedGamesSection />
+      </div>
+
+      {/* contact us */}
+
+      <div className="w-full mt-12 bg-[#282a30] grid grid-cols-[55%_45%] py-16 relative">
+
+        <div className="w-8 h-full bg-[#282a30] absolute top-0 left-0 -translate-x-full"></div>
+        <div className="w-8 h-full bg-[#282a30] absolute top-0 right-0 translate-x-full"></div>
+
+        <div>
+
+          <p className="text-2xl text-white font-medium">
+            Crypto Online Casino
+          </p>
+
+          <p className="max-w-[58ch] text-base text-[#9dabb8] font-light mt-6 leading-7">
+            Casinos online have not always been around, but we can safely say that online casinos have been used a lot since they came on the market. And it's not in short demand nor options, and now in 2023, we have 1000s and 1000s to pick from – it's just a matter of what you like and what payment options you would like to see at the casino.
+          </p>
+
+          <p className="max-w-[58ch] text-base text-[#9dabb8] font-light mt-6 leading-7">
+            Players are always looking for something new, which will help make the gaming experience so much better and more accessible. Allowing the player to focus on the absolute fun of a casino, that's right, the games themselves.
+          </p>
+
+          <p className="text-xl font-normal text-green-600 mt-6">
+            Show more
+          </p>
+
+        </div>
+
+        <div>
+          <p className="text-2xl text-white font-medium">
+            Help us improve your experience
+          </p>
+
+          <textarea
+            className="w-full mt-6 bg-[#202328] p-4 text-base text-[#9dabb8] left-6 h-36
+            placeholder-[#9dabb8] placeholder-opacity-70 focus:outline-none"
+            placeholder="Found a bug? Or have any recommendations? Please leave your message here and our team will work on it!"
+          >
+          </textarea>
+
+          <div className="mt-6 flex items-center gap-x-3">
+
+            <Button
+              color="green"
+              text="Leave a Message"
+              className="!font-semibold !px-6 flex-shrink-0"
+            />
+
+            <p className="text-base text-[#9dabb8] font-normal">
+              Now get rewarded for your valuable feedback.
+            </p>
+
+          </div>
+
+          <p className="text-base mt-11 text-[#9dabb8] font-normal">
+            Or Email us: <span className="text-green-500">gmailadd@gmail.com</span>
+          </p>
         </div>
 
       </div>

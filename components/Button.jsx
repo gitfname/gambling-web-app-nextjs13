@@ -1,16 +1,24 @@
 
-export default function Button({text, className="", color}) {
+export default function Button({text, className="", color="purple"}) {
+
+    let _btnColor = color
+    switch (color) {
+        case "green":
+            _btnColor = "green-btn"
+        break;
+        case "dark-orangish":
+            _btnColor = "dark-orangish-btn"
+        break;
+
+        default:
+            _btnColor = "purple-btn"
+    }
+
     return (
         <button
-            style={{
-                backgroundColor: color
-            }}
-            className={`relative active:scale-[0.96] transition-transform py-4 px-9 rounded-sm overflow-hidden text-white text-base tracking-wide font-normal ` + className}
+            className={`${_btnColor} relative active:scale-[0.96] transition-transform py-4 px-9 rounded-sm overflow-hidden text-white text-base tracking-wide font-normal ` + className}
         >
-            <span className="absolute top-0 right-0 h-1/2 w-[50%] bg-gradient-to-l from-transparent to-white/[0.17]">
-                <span className="absolute bottom-0 left-0 h-1/2 translate-y-1/2 w-full backdrop-blur-sm"></span>
-            </span>
-            <span className="z-10 relative ">
+            <span className="z-10 relative pointer-events-none ">
                 {text}
             </span>
         </button>

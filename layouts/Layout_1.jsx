@@ -117,7 +117,7 @@ export default function Layout_1({children}) {
                         <Button
                             text="Sign up"
                             className="!px-8"
-                            color="#218338"
+                            color="green"
                         />
 
                         <div className="ml-3 flex items-stretch gap-x-1.5">
@@ -145,7 +145,7 @@ export default function Layout_1({children}) {
                 </div>
 
                 {/* main section */}
-                <div className="bg-[#1e2123] overflow-y-auto space-y-5 px-11 py-10 pt-0">
+                <div className="bg-[#1e2123] overflow-y-auto px-11 py-10 pt-0 pb-20">
                     {children}
                 </div>
 
