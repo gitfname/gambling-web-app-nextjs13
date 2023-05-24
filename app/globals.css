@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-[14px];
+  @apply text-[14px] xl:text-[15px] 2xl:text-[16px];
 }
 
 * {

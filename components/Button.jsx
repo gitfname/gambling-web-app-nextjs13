@@ -10,7 +10,7 @@ export default function Button({text, className="", color}) {
             <span className="absolute top-0 right-0 h-1/2 w-[50%] bg-gradient-to-l from-transparent to-white/[0.17]">
                 <span className="absolute bottom-0 left-0 h-1/2 translate-y-1/2 w-full backdrop-blur-sm"></span>
             </span>
-            <span className="z-10 relative">
+            <span className="z-10 relative ">
                 {text}
             </span>
         </button>

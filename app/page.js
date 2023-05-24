@@ -1,5 +1,6 @@
 
 import Button from "@/components/Button";
+import Card_2 from "@/components/Card_2";
 import IconButton_1 from "@/components/IconButton_1";
 import Layout_1 from "@/layouts/Layout_1";
 import Image from "next/image";
@@ -165,6 +166,27 @@ export default function Home() {
 
 
         </div>
+      </div>
+
+      <div className="w-full grid grid-cols-2 gap-x-3 bg-gradient-to-b from-transparent to-[#24262b]">
+
+        <Card_2
+          btnColor="#743be7"
+          text="CASINO"
+          btnText="Go to Casino"
+          color="from-purple-800 via-purple-800 to-purple-900/20"
+          titleImage="/svg/casino-cards__green.svg"
+          img="/images/casino.webp"
+        />
+        <Card_2
+          btnColor="#218338"
+          text="SPORTS"
+          btnText="Go to Sports"
+          color="from-green-600 via-green-600 to-green-800/20"
+          titleImage="/svg/sports__orange.svg"
+          img="/images/sports.webp"
+        />
+        
       </div>
     </Layout_1>
   )
