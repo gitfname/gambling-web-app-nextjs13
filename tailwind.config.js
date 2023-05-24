@@ -4,7 +4,8 @@ module.exports = {
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
-    './layouts/**/*.{js,jsx}'
+    './layouts/**/*.{js,jsx}',
+    "./lib/**/*.js"
   ],
   plugins: [],
 }
