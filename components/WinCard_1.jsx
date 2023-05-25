@@ -11,7 +11,7 @@ export default function WinCard_1({img, title, price}) {
                 height={242}
                 alt=""
                 src={img}
-                className="h-44"
+                className="h-36 sm:h-40 md:h-44"
             />
             <div className="px-2.5 mt-4">
                 <p className="text-base font-light text-white/50">{title}</p>

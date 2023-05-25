@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   @apply text-[14px] xl:text-[15px] 2xl:text-[16px];
 }
@@ -26,6 +22,16 @@ html {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 1px;
 }
+
+
+.mobile-main-navlink {
+  background-image: conic-gradient(from 90deg at 50% 50%,#8447F6 -90deg,#5617CB 270deg,#8447F6 270deg,#5617CB 630deg)
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 .purple-btn {

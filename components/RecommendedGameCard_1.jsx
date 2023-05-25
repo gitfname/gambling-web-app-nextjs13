@@ -13,7 +13,7 @@ export default function RecommendedGameCard_1({ img, title }) {
                 height={242}
                 alt=""
                 src={img}
-                className="h-52"
+                className="h-44 sm:h-48 md:h-52 w-full"
             />
             <div className="flex items-center justify-between px-2.5 mt-4">
                 <p className="text-base font-light text-white/50">{title}</p>

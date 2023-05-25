@@ -53,7 +53,7 @@ export default function Home() {
           height={920}
           alt=""
           src="/hero-bg-1.png"
-          className="h-auto max-lg:order-1 lg:row-start-1 lg:col-start-1 max-lg:w-full lg:w-[65.5%] ml-auto objcente r object-center object-cover"
+          className="h-full max-lg:order-1 lg:row-start-1 lg:col-start-1 max-lg:w-full lg:w-[65.5%] ml-auto objcente r object-center object-cover"
         />
       </div>
 
@@ -195,7 +195,7 @@ export default function Home() {
       </div>
 
       {/* banner-1 */}
-      <div className="w-full p-8 h-[16.5rem] relative bg-[#16181b] overflow-hidden flex items-centerl">
+      <div className="w-full max-md:p-5 p-8 h-[24rem] lg:h-[16.5rem] relative bg-[#16181b] overflow-hidden flex items-centerl">
 
         <Image
           width={700}
@@ -213,14 +213,14 @@ export default function Home() {
           className="w-[17rem] h-[15rem] absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"
         />
         
-        <div className="h-1/2 w-1/2 relative z-10 flex items-stretch justify-center">
+        <div className="max-lg:h-[25%] h-1/2 max-lg:w-full w-1/2 relative z-10 flex items-stretch justify-center">
           <div className="flex-shrink-0">
             <Image
               width={160}
               height={60}
               alt=""
               src="/images/applepay.webp"
-              className="w-24 h-14 object-center object-scale-down"
+              className="w-24 h-14 max-md:w-20 max-md:h-10 object-center object-scale-down"
             />
           </div>
 
@@ -230,7 +230,7 @@ export default function Home() {
               height={60}
               alt=""
               src="/images/masterpay.webp"
-              className="w-24 h-14 object-center object-scale-down"
+              className="w-24 h-14 max-md:w-20 max-md:h-10 object-center object-scale-down"
             />
           </div>
 
@@ -240,7 +240,7 @@ export default function Home() {
               height={60}
               alt=""
               src="/images/googlepay.webp"
-              className="w-24 h-14 object-center object-scale-down"
+              className="w-24 h-14 max-md:w-20 max-md:h-10 object-center object-scale-down"
             />
           </div>
 
@@ -250,7 +250,7 @@ export default function Home() {
               height={60}
               alt=""
               src="/images/visapay.webp"
-              className="w-24 h-14 object-center object-scale-down"
+              className="w-24 h-14 max-md:w-20 max-md:h-10 object-center object-scale-down"
             />
           </div>
 
@@ -260,13 +260,18 @@ export default function Home() {
               height={60}
               alt=""
               src="/images/samsungpay.webp"
-              className="w-24 h-14 object-center object-scale-down"
+              className="w-24 h-14 max-md:w-20 max-md:h-10 object-center object-scale-down"
             />
           </div>
         </div>
 
-        <div className="absolute left-1/2 top-0 bottom-0 right-3 backdrop-blur-sm bg-transparent/5 flex items-center pl-14">
-          <div>
+        <div
+          className="absolute left-1/2 lg:top-0 bottom-0 right-3 backdrop-blur-sm bg-transparent/5
+          max-lg:left-0 max-lg:bottom-0 max-lg:right-0 max-lg:w-full max-lg:h-56
+          flex items-center p-4 lg:pl-14"
+        >
+
+          <div className="max-lg:flex max-lg:mx-auto max-lg:items-center flex-col">
             <p
               className="text-white text-2xl font-medium"
             >
@@ -279,9 +284,10 @@ export default function Home() {
             </p>
             <Button
               text="Deposite"
-              className="mt-12"
+              className="mt-12 max-lg:w-3/4"
             />
           </div>
+
         </div>
 
       </div>
@@ -293,7 +299,7 @@ export default function Home() {
       <RecentBigWinsSection />
 
       {/* banners-2 */}
-      <div className="w-full h-96 mt-20">
+      <div className="w-full h-[29rem] lg:h-96 mt-20">
         <BannerSLiderSection />
       </div>
 
@@ -303,10 +309,10 @@ export default function Home() {
       </div>
 
       {/* contact us */}
-      <div className="w-full mt-12 bg-[#282a30] grid grid-cols-1 gap-y-10 lg:grid-cols-[55%_45%] py-16 relative">
+      <div className="w-full max-lg:px-6 mt-12 bg-[#282a30] grid grid-cols-1 gap-y-10 lg:grid-cols-[55%_45%] py-16 relative">
 
-        <div className="w-8 h-full bg-[#282a30] absolute top-0 left-0 -translate-x-full"></div>
-        <div className="w-8 h-full bg-[#282a30] absolute top-0 right-0 translate-x-full"></div>
+        <div className="w-8 h-full max-lg:hidden bg-[#282a30] absolute top-0 left-0 -translate-x-full"></div>
+        <div className="w-8 h-full max-lg:hidden bg-[#282a30] absolute top-0 right-0 translate-x-full"></div>
 
         <div>
 

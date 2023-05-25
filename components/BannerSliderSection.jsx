@@ -17,7 +17,7 @@ export default function BannerSLiderSection() {
                             height={700}
                             alt=""
                             src="/images/ball_1.png"
-                            className="w-64 h-64 absolute -bottom-24 -right-20"
+                            className="w-64 h-64 absolute max-lg:hidden -bottom-24 -right-20"
                         />
 
                         <Image
@@ -25,7 +25,7 @@ export default function BannerSLiderSection() {
                             height={720}
                             alt=""
                             src="/images/ball_5.webp"
-                            className="w-[26rem] h-auto absolute top-0 left-1/2 -translate-x-[75%]"
+                            className="w-[26rem] h-auto absolute max-lg:hidden top-0 left-1/2 -translate-x-[75%]"
                         />
 
                         <Image
@@ -33,11 +33,11 @@ export default function BannerSLiderSection() {
                             height={350}
                             alt=""
                             src="/images/bonus.3hundred-percent.png"
-                            className="h-64 object-center object-scale-down absolute top-1/2 right-20 -translate-y-1/2"
+                            className="h-40 sm:h-44 max-lg:-translate-x-1/2 max-lg:left-1/2 max-lg:-translate-y-[22%] lg:h-64 object-center object-scale-down absolute top-1/2 lg:right-20 lg:-translate-y-1/2"
                         />
 
-                        <div className="absolute right-1/2 top-0 bottom-0 left-0 backdrop-blur-sm bg-transparent/5 pl-10 pt-12">
-                            <div>
+                        <div className="absolute right-0 lg:right-1/2 top-0 bottom-0 left-0 lg:backdrop-blur-sm bg-transparent/5 max-lg:p-4 lg:pl-10 pt-12">
+                            <div className="max-lg:h-full max-lg:flex flex-col max-lg:items-center">
                                 <p
                                     className="text-white text-3xl font-semibold leading-10"
                                 >
@@ -51,7 +51,7 @@ export default function BannerSLiderSection() {
                                 <Button
                                     text="Sign up"
                                     color="dark-orangish"
-                                    className="mt-12 !w-3/5 !py-5 !font-semibold !text-lg"
+                                    className="lg:mt-12 max-lg:mx-auto w-1/2 md:!w-3/5 max-lg:w-3/4 !py-5 !font-semibold !text-lg max-lg:mt-auto"
                                 />
                             </div>
                         </div>
@@ -67,7 +67,7 @@ export default function BannerSLiderSection() {
                             height={700}
                             alt=""
                             src="/images/ball_1.png"
-                            className="w-64 h-64 absolute -bottom-24 -right-20"
+                            className="w-64 h-64 absolute max-lg:hidden -bottom-24 -right-20"
                         />
 
                         <Image
@@ -75,7 +75,7 @@ export default function BannerSLiderSection() {
                             height={350}
                             alt=""
                             src="/images/ball_4.6eff1ed4.png"
-                            className="h-auto object-center object-scale-down absolute -bottom-12 left-1/2 -translate-x-1/2"
+                            className="h-auto object-center max-lg:hidden object-scale-down absolute -bottom-12 left-1/2 -translate-x-1/2"
                         />
 
                         <Image
@@ -83,11 +83,11 @@ export default function BannerSLiderSection() {
                             height={350}
                             alt=""
                             src="/images/rain.webp"
-                            className="h-56 object-center object-scale-down absolute top-1/2 right-8 -translate-y-1/2"
+                            className="h-32 sm:h-44 max-lg:-translate-x-1/2 max-lg:left-1/2 max-lg:-translate-y-[22%] lg:h-64 object-center object-scale-down absolute top-1/2 lg:right-20 lg:-translate-y-1/2"
                         />
 
-                        <div className="absolute right-1/2 top-0 bottom-0 left-0 backdrop-blur-sm bg-transparent/5 pl-10 pt-12">
-                            <div>
+                        <div className="absolute right-0 lg:right-1/2 top-0 bottom-0 left-0 lg:backdrop-blur-sm bg-transparent/5 max-lg:p-4 lg:pl-10 pt-12">
+                            <div className="max-lg:h-full max-lg:flex flex-col max-lg:items-center">
                                 <p
                                     className="text-white text-3xl font-semibold"
                                 >
@@ -104,7 +104,7 @@ export default function BannerSLiderSection() {
                                 <Button
                                     text="Sign up"
                                     color="green"
-                                    className="mt-12 !w-3/5 !py-5 !font-semibold !text-lg"
+                                    className="lg:mt-12 max-lg:mx-auto w-1/2 md:!w-3/5 max-lg:w-3/4 !py-5 !font-semibold !text-lg max-lg:mt-auto"
                                 />
                             </div>
                         </div>

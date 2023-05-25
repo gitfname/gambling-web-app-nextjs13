@@ -8,16 +8,20 @@ import { AiOutlineMenu } from "react-icons/ai"
 import { HiChat } from "react-icons/hi"
 import { BsGlobe2 } from "react-icons/bs"
 import Footer from "@/components/Footer"
+import Image from "next/image"
+import BottomAppBar_1 from "@/components/BottomAppBar_1"
 
 
 export default function Layout_1({children}) {
     return (
-        <div className="w-screen h-screen overflow-hidden bg-red-400 grid grid-rows-1 grid-cols-[4.5rem_calc(100%-4.5rem)]">
+        <div className="w-screen h-screen overflow-hidden
+        grid grid-rows-1 grid-cols-1 md:grid-cols-[4.5rem_calc(100%-4.5rem)]">
 
             {/* left side */}
             <div
                 className="bg-[#1c1e22] py-2.5 z-20
-                shadow-[4px_0px_12px_-1px_rgba(0,0,0,0.5)] grid grid-cols-1 grid-rows-[max-content_1fr]"
+                shadow-[4px_0px_12px_-1px_rgba(0,0,0,0.5)] grid grid-cols-1 grid-rows-[max-content_1fr]
+                max-md:hidden"
             >
 
                 <div className="px-3">
@@ -91,8 +95,8 @@ export default function Layout_1({children}) {
             <div className="grid grid-cols-1 grid-rows-[4.5rem_calc(100%-4.5rem)]">
 
                 {/* top side */}
-                <div className="bg-[#24262b] shadow-lg z-20 shadow-black/30 flex items-center justify-between px-10">
-                    <div className="flex items-center gap-x-1">
+                <div className="bg-[#24262b] shadow-lg z-20 sm:justify-end md:justify-between shadow-black/30 flex items-center justify-between px-4 md:px-10">
+                    <div className="flex items-center gap-x-1 max-md:hidden">
                         <IconButton_2
                             icon="/svg/casino-cards.svg"
                             iconOnHover="/svg/casino-cards__green.svg"
@@ -112,6 +116,14 @@ export default function Layout_1({children}) {
                         />
                     </div>
 
+                    <Image
+                        width={330}
+                        height={70}
+                        alt=""
+                        src="/logo.7e3c775a.png"
+                        className="h-auto w-40 sm:hidden"
+                    />
+
                     <div className="flex items-stretch gap-x-2 self-stretch py-2.5">
                         <p className="text-base font-light text-white/60 flex-shrink-0 grid place-items-center cursor-pointer px-4">Sign in</p>
 
@@ -121,7 +133,7 @@ export default function Layout_1({children}) {
                             color="green"
                         />
 
-                        <div className="ml-3 flex items-stretch gap-x-1.5">
+                        <div className="ml-3 flex items-stretch gap-x-1.5 max-sm:hidden">
                             <IconButton_1
                                 badge={99}
                                 badgeClassName="bg-green-600"
@@ -146,11 +158,12 @@ export default function Layout_1({children}) {
                 </div>
 
                 {/* main section */}
-                <div className="bg-[#1e2123] overflow-y-auto">
-                    <div className="px-11 py-10 pt-0 pb-0">
+                <div className="bg-[#1e2123] overflow-y-auto max-lg:pb-20">
+                    <div className="max-md:px-3 px-11 py-10 pt-0 pb-0">
                         {children}
                     </div>
                     <Footer />
+                    <BottomAppBar_1 />
                 </div>
 
             </div>

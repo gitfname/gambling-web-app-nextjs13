@@ -13,9 +13,9 @@ export default function TopRatedGamesSection() {
             spaceBetween={10}
             showPrevNextButtons={true}
             showSeeMore={false}
-            slidesPerView={3}
+            slidesPerView={2}
             slidesPerView_sm={3}
-            slidesPerView_md={3}
+            slidesPerView_md={4}
             slidesPerView_lg={5}
             slidesPerView_xl={6}
             items={topRatedGames}
