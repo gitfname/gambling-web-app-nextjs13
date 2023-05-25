@@ -13,8 +13,8 @@ export default function RecommendedGamesSection() {
             showPrevNextButtons={true}
             showSeeMore={false}
             showViewAll={true}
-            slidesPerView={1.6}
-            slidesPerView_sm={2}
+            slidesPerView={3}
+            slidesPerView_sm={3}
             slidesPerView_md={3}
             slidesPerView_lg={5}
             slidesPerView_xl={6}

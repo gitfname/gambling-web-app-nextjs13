@@ -14,8 +14,8 @@ export default function RecentBigWinsSection() {
             showPrevNextButtons={false}
             showSeeMore={false}
             titleLeft={ <LiveIndicator_1 /> }
-            slidesPerView={1.6}
-            slidesPerView_sm={2}
+            slidesPerView={3}
+            slidesPerView_sm={3}
             slidesPerView_md={3}
             slidesPerView_lg={6}
             slidesPerView_xl={6}

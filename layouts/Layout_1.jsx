@@ -7,6 +7,7 @@ import MenuLink_1 from "@/components/MenuLink_1"
 import { AiOutlineMenu } from "react-icons/ai"
 import { HiChat } from "react-icons/hi"
 import { BsGlobe2 } from "react-icons/bs"
+import Footer from "@/components/Footer"
 
 
 export default function Layout_1({children}) {
@@ -145,8 +146,11 @@ export default function Layout_1({children}) {
                 </div>
 
                 {/* main section */}
-                <div className="bg-[#1e2123] overflow-y-auto px-11 py-10 pt-0 pb-20">
-                    {children}
+                <div className="bg-[#1e2123] overflow-y-auto">
+                    <div className="px-11 py-10 pt-0 pb-0">
+                        {children}
+                    </div>
+                    <Footer />
                 </div>
 
             </div>
