@@ -53,7 +53,7 @@ export default function Home() {
           height={920}
           alt=""
           src="/hero-bg-1.png"
-          className="h-full max-lg:order-1 lg:row-start-1 lg:col-start-1 max-lg:w-full lg:w-[65.5%] ml-auto objcente r object-center object-cover"
+          className="lg:h-auto h-full max-lg:order-1 lg:row-start-1 lg:col-start-1 max-lg:w-full lg:w-[65.5%] ml-auto objcente r object-center object-cover"
         />
       </div>
 
