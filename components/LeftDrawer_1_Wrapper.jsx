@@ -61,7 +61,9 @@ export default function LeftDrawer_1Wrapper({children, className}) {
                     <div className="mt-6 space-y-2">
                     <DrawerAccordion_1
                             items={leftDrawerItems.map(item => ({
-                                text: item.text,
+                                hasContent: (item?.items?.length > 0),
+                                isSeparator: item?.isSeparator || false,
+                                text: item?.text,
                                 icon: (
                                     <Image
                                         width={100}
@@ -71,7 +73,7 @@ export default function LeftDrawer_1Wrapper({children, className}) {
                                         className="w-5 h-5 object-center object-cover opacity-50 group-hover:opacity-100"
                                     />
                                 ),
-                                content: item.items.map(item => (
+                                content: item?.items?.map(item => (
                                     <DrawerMenuItem_1
                                         key={item.id}
                                         text={item.text}
@@ -88,37 +90,6 @@ export default function LeftDrawer_1Wrapper({children, className}) {
                                 ))
                             }))}
                         />
-                        {/* <DrawerAccordion_1
-                            items={[
-                                {
-                                    text: "Casino",
-                                    icon: (
-                                        <Image
-                                            width={100}
-                                            height={100}
-                                            alt=""
-                                            src="/svg/casino-cards.svg"
-                                            className="w-5 h-5 object-center object-cover opacity-50 group-hover:opacity-100"
-                                        />
-                                    ),
-                                    content: <>
-                                        <DrawerMenuItem_1
-                                            text="Pick for you"
-                                            icon={
-                                                <Image
-                                                    width={100}
-                                                    height={100}
-                                                    alt=""
-                                                    src="/svg/picks-for-you.svg"
-                                                    className="w-5 h-5 object-center object-cover opacity-50 group-hover:opacity-100"
-                                                />
-                                            }
-                                        />
-                                    </>
-                                    
-                                }
-                            ]}
-                        /> */}
                     </div>
 
                 </div>

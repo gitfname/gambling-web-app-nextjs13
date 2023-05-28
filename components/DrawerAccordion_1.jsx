@@ -16,19 +16,34 @@ export default function DrawerAccordion_1({items=[]}) {
 
             {
                 items.map((item, i) => (
-                    <AccordionItem key={i} className="border-none">
-                        <AccordionButton className="bg-[#2d3035] hover:!bg-[#383a3e] group">
-                            <DrawerAccordionButton_1
-                                text={item.text}
-                                icon={item?.icon}
-                            />
-                            <AccordionIcon className="!text-white/70" />
-                        </AccordionButton>
+                    <>
+                    {
+                        item.isSeparator
+                        ?
+                            <div className="w-full !mt-4"></div>
+                        :
+                            <AccordionItem key={i} className="border-none">
+                                <AccordionButton className="bg-[#2d3035] hover:!bg-[#383a3e] group">
+                                    <DrawerAccordionButton_1
+                                        text={item.text}
+                                        icon={item?.icon}
+                                    />
+                                    {
+                                        item?.hasContent
+                                        ?
+                                            <AccordionIcon className="!text-white/70" />
+                                        :
+                                            null
+                                    }
+                                </AccordionButton>
 
-                        <AccordionPanel className="space-y-1">
-                            {item?.content}
-                        </AccordionPanel>
-                    </AccordionItem>
+                                <AccordionPanel className={`${item.hasContent?"space-y-1":"!p-0"}`}>
+                                    {item?.content}
+                                </AccordionPanel>
+                            </AccordionItem>
+
+                    }
+                    </>
                 ))
             }
 
